@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <div style="margin:20px">
+        <form method="post" action="form.php">
+            <div>
+                <label>Name</label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div>
+                <label>Subjects</label>
+                <input type="checkbox" name="subjects[]" value="ED"> ED
+                <input type="checkbox" name="subjects[]" value="EM"> EM
+                <input type="checkbox" name="subjects[]" value="FP"> FP
+            </div>
+            <div>
+                <label>City</label>
+                <select name="city">
+                    <option value="nagpur">Nagpur</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="chennai">Chennai</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" style="margin-top: 10px;">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

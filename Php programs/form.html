@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    <style>
+        .container{
+            width: 200px;
+        margin:auto;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+        <form method="post" action="form.php">                                                   
+            <label for="name">Name</label>
+            <input type="text" name="name"><br><br>
+            <input type="radio" name="Gender" value="M">Male
+            <input type="radio" name="Gender" value="F">Female
+            <br><br>
+            <input type="checkbox" name="subjects[]" value="DS">DS
+            <input type="checkbox" name="subjects[]" value="TOC">TOC
+            <input type="checkbox" name="subjects[]" value="CAO">CAO
+            <select name="city" id="city">
+                <option value="Nagpur">Nagpur</option>
+                <option value="Goa">Goa</option>
+            </select>
+            <br><br>
+            <label for="name">Age</label>
+            <input type="text" name="age"><br><br>
+            
+            <button type="submit" value="submit">Submit</button>
+        </form>
+        </div>
+    </body>
+</html>
