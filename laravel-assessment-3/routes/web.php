@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hello/{num1}/{num2}', function ($num1,$num2) {
-    return 'Addition: '.($num1+$num2);
-})->where('num1','[0-9]+')
-->where('num2','[0-9]+');
+Route::get('/', function () {
+    return view('welcome');
+});
